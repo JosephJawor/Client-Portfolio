@@ -8,6 +8,6 @@
 - [ ] Ensure Documentation is Complete
 
 # Progress
-- Project structure scaffolded with React.js (client), Node.js/Express (server), Postgres (init.sql), Tailwind CSS, and CI/CD YAML.
+- Project structure scaffolded with React.js (client), Node.js/Express (server), SSMS (init.sql), Tailwind CSS, and CI/CD YAML.
 - Placeholder PDF for capability statement added.
 - Next: Customize the project (implement form logic, news API, etc.)
