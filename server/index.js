@@ -61,7 +61,7 @@ app.post('/api/contact', async (req, res) => {
         .input('message', sql.Text, message)
         .query('INSERT INTO contact_submissions (name, email, message) VALUES (@name, @email, @message)');
     } else {
-      // Store in memory when DB is not available
+      // Stores in memory when DB is not available
       contactSubmissions.push({ name, email, message, timestamp: new Date() });
       console.log('Contact submission stored in memory:', { name, email });
     }
@@ -73,11 +73,11 @@ app.post('/api/contact', async (req, res) => {
 });
 
 
-// News feed endpoint (NHS Digital API integration)
+// NHS Digital API integration
 app.get('/api/news', async (req, res) => {
   try {
-    // NHS England (includes NHS Digital updates) press office RSS feed (public)
-    // Using a stable RSS endpoint avoids website-specific paths that may 404.
+    // NHS England (includes NHS Digital updates) press office RSS feed
+    // Using a stable RSS endpoint avoids website-specific paths that may 404
     const nhsRssUrl = 'https://www.england.nhs.uk/feed/';
 
     const fetchImpl = globalThis.fetch
