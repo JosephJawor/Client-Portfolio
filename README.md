@@ -58,7 +58,7 @@ A modern web-based portfolio created for a health technology company that specia
    npm install
 
    # Install client dependencies
-   cd ../client
+   cd ../Client-Portfolio/client
    npm install
    ```
 
