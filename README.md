@@ -29,40 +29,15 @@ A modern web-based portfolio created for a health technology company that specia
 
 | Layer | Technology |
 |-------|------------|
-| Front-End | React.js 18, Tailwind CSS |
+| Front-End | React.js, Tailwind CSS |
 | Back-End | Node.js, Express.js |
-| Database | SQL Server (with in-memory fallback) |
-| Build Tools | Create React App, PostCSS |
-
-## Project Structure
-
-```
-├── client/                 # React front-end
-│   ├── public/
-│   │   ├── docs/          # Downloadable documents (capability statement)
-│   │   └── index.html
-│   └── src/
-│       ├── App.js         # Main application component
-│       ├── api.js         # API service functions
-│       ├── index.js       # Entry point
-│       └── index.css      # Tailwind CSS imports
-├── server/                 # Node.js back-end
-│   ├── index.js           # Express server & API routes
-│   ├── package.json
-│   ├── .env               # Environment configuration
-│   └── models/
-│       └── init.sql       # Database schema
-├── docs/                   # Documentation & assets
-│   └── capability-statement-placeholder.pdf
-└── .github/
-    └── workflows/         # CI/CD pipelines
-```
+| Database | SQL Server |
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.x or higher
+- Node.js
 - npm
 - SQL Server
 
